@@ -1,0 +1,36 @@
+[git 사용법 : github 저장소와 연동]
+
+1. https://git-scm.com/downloads
+2. https://github.com/
+
+<git 사용자 등록>
+ 1)git config --global user.email "이메일"
+2)git config --global user.name "이름"
+git config --list : 잘 등록됐는지 확인
+
+<git 저장소 및 commit 생성>
+1)git init : 로컬 저장소 만들기.
+git status : 올라간 파일이 있는지 확인
+2)git add : 저장할 파일을 지정
+ - git add (파일명) : 해당 파일만
+ - git add . : 모든 파일
+3) git commit -m "메세지" : commit 메세지 지정 및 생성
+
+<github에 파일 업로드(push)>
+1) git remote add origin [git 온라인 저장소 주소] : origin에 github 레파지토리 주소 등록
+2) git push origin master : 파일을 원격 저장소에 push
+
+<github에서 저장소 내려받기(clone)>
+git clone "git 온라인 저장소 주소"
+
+---------------------------
+<등록한 레파지토리에 추가로 push>
+1) git add .
+2) git commit -m "messege"
+3) git push origin master
+위 명령어만 입력하면 된다.
+-------------------------------------
+오류 발생 시,
+git pull origin master --allow-unrelated-histories
+로 원격 저장소에서 파일 pull 후,
+다시 3 진행
