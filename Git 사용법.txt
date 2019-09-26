@@ -18,6 +18,11 @@ git status : 올라간 파일이 있는지 확인
 
 <github에 파일 업로드(push)>
 1) git remote add origin [git 온라인 저장소 주소] : origin에 github 레파지토리 주소 등록
+-----------------------------------
+1)에서 오류 발생 시(fatal: remote origin already exists. 에러),
+git remote rm origin
+remote origin을 없애버린 후 진행하면 잘 된다
+---------------------------------------------
 2) git push origin master : 파일을 원격 저장소에 push
 
 <github에서 저장소 내려받기(clone)>
