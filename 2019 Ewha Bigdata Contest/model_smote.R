@@ -98,3 +98,6 @@ roc.curve(yn_test$fire, pred.tree.rose[,2]) ; roc.curve(yn_test$fire, pred.tree.
 
 ## [결과] AUC값: ROSE는 0.757, oversampling은 0.766, undersampling은 0.768, both는 0.769 
 ## [결론] 통상적으로 ROSE package를 이용한 방법이 가장 정확도가 높게 나오지만, 이 경우 대부분이 비슷하지만 BOTH가 가장 높게 나왔다. 
+
+
+### [참고자료] https://goodtogreate.tistory.com/entry/Handling-Class-Imbalance-with-R-and-Caret-An-introduction
